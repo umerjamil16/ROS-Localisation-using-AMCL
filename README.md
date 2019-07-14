@@ -7,10 +7,15 @@ In this project, I used AMCL (Adaptive Monte Carlo Localization) package to loca
 4.  If this covariance is less than 0.65, this means that the robot has localized itself correctly. Then, the program will end. If this covariance is greater than 0.65, it will repeat the whole the process (disperse the particles, perform the movement, check the covariance...).
 
 To runt the program, first launch the amcl_node:
+
 ```roslaunch my_amcl_launcher change_map.launch ```
+
 then launch Rviz:
+
 ```rusrun rviz rviz```
+
 and the program file that performs above mentioned steps 1, 2, 3
+
 ```roslaunch initialize_particles init_particles_caller.launch```
 
 
